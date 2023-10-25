@@ -11,7 +11,7 @@ class UserController extends Controller
 {
     
     public function updateRelayState(Request $request) {
-        $user = Auth::user(); // Obtén el usuario autenticado
+        $user = Auth::user(); 
     
         if ($request->input('toggle') == 'on') {
             $user->relay_state = 1;
@@ -47,7 +47,6 @@ class UserController extends Controller
                 'id_cargo' => 'required|exists:cargos,id',
             ]);
         
-            // Crear el usuario
             User::create([
                 'name' => $request->input('name'),
                 'email' => $request->input('email'),
@@ -80,7 +79,6 @@ class UserController extends Controller
             'id_cargo' => 'required|exists:cargos,id', 
         ]);
 
-        // Actualizar el usuario
         $user = User::find($id);
         $user->name = $request->input('name');
         $user->email = $request->input('email');
