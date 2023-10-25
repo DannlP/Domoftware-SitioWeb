@@ -1,0 +1,23 @@
+/* Foster */
+body{
+    overflow-x: hidden;
+    
+}
+
+
+.extended-footer {
+  background-color: #133A35; 
+  padding: 10px; 
+}
+
+
+
+
+ .navbar-divider-f {
+  position: absolute;
+  background-color: #133A35;
+  height: 350px;
+  margin-top: -350px; 
+  width: 100vw;
+} 
+

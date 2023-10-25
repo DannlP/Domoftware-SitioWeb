@@ -1,0 +1,85 @@
+
+
+
+body {
+   background-color: #f8f9fa
+  
+  }
+
+
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+  }
+
+
+     /* imagenes */
+
+     @keyframes float {
+      0% {
+          transform: translateY(0);
+      }
+      50% {
+          transform: translateY(-10px);
+      }
+      100% {
+          transform: translateY(0);
+      }
+  }
+
+  .floating-image {
+      animation: float 3s ease-in-out infinite;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+ p{
+  font-size: 20px;
+ }
+
+
+  /*Title PENSAMOS, DISEÑAMOS Y CONSTRUIMOS */
+
+  .animacion-texto {
+    animation: animacion-texto 2s infinite; 
+  }
+  
+  @keyframes animacion-texto {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px); 
+    }
+    60% {
+      transform: translateY(-5px); 
+    }
+  }
+  
+
+
+
+
+
+
+
+
+  

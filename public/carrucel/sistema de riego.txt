@@ -1,0 +1,20 @@
+//Creación de variables
+int sensorHumedad = A0 ; //sensor de humedad
+int bomba= 2;//bomba de agua
+
+void setup() {
+  pinMode(bomba, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  Serial.print("Humedad:");
+  Serial.println(analogRead(sensorHumedad)); //Leer la humedad del sensor
+  delay(500);
+  
+if(analogRead(sensorHumedad) <900){
+digitalWrite(bomba,HIGH);
+}else if(analogRead(sensorHumedad) > 800){
+  digitalWrite(bomba,LOW);
+}
+}

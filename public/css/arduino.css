@@ -1,0 +1,42 @@
+body{
+    background-image: url(../images/img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.7); 
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .black-container {
+    color: rgb(255, 255, 255); 
+    padding: 20px; 
+    height: 160vh;
+}
+
+.table {
+    color: rgb(0, 0, 0);
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+}
+
+.table td, .table th {
+    color: rgb(255, 255, 255) !important;
+}
+
+
+.table {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+
+.table thead th {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white !important; 
+}
+
+.pagination {
+    z-index: -1;
+}
